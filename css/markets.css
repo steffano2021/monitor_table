@@ -1,0 +1,173 @@
+
+.test-button{
+    margin-top: 55px;
+    width: 80px;
+    z-index: 2;
+}
+
+.market-box {
+    /* background-color:burlywood; */
+    /* height: 800px; */
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hidden-box {
+    /* background-color: red; */
+    width: 750px;
+    height: 600px;
+    display: inline-flex;
+    position: relative;
+    overflow: hidden;
+}
+
+.maps-container {
+    margin-top: 25px;
+    position: relative;
+    width: 700px;
+    height: 600px;
+    animation-name: '';
+    animation-duration: 1s;
+}
+
+.maps-container > img {
+    position: absolute;
+    z-index: 1;
+    border: none;
+    object-fit: cover;
+    min-height: 100%;
+    min-width: 100%;
+}
+
+.map-continents{
+    z-index: 3;
+}
+
+.map-map:hover ~ .tooltiptext{
+    visibility: visible;
+    z-index: 4;
+}
+
+table, th, td {
+  border:1px solid black;
+}
+
+.EOD-table, .SOD-table {
+    position: absolute;
+    margin-left: 800px;
+    height: 100px;
+    width: 100px;
+    display: flexbox;
+
+    /* duration is very important */
+    animation-name: '';
+    animation-duration: 1s;
+
+    border-collapse: collapse;
+    margin-top: 20px;
+    font-size: 0.9em;
+    font-family: sans-serif;
+    min-width: 400px;
+
+    box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, .2);
+}
+
+
+.SOD-table thead tr,
+.EOD-table thead tr {
+    background-color: #009879;
+    color: #ffffff;
+    text-align: left;
+}
+
+.SOD-table th,.SOD-table td,
+.EOD-table th,.EOD-table td{
+    padding: 10.1px 15px;
+}
+
+.SOD-table tbody tr,
+.EOD-table tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+.SOD-table tbody tr:nth-of-type(even) ,
+.EOD-table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+.SOD-table tbody tr:last-of-type ,
+.EOD-table tbody tr:last-of-type {
+    border-bottom: 2px solid #009879;
+}
+
+@keyframes rightToMid {
+    from {
+        margin-left: 800px;
+    }
+    to {
+        margin-left: 100px;
+    }
+}
+
+@keyframes midToRight {
+    from {
+        margin-left: 100px;
+    }
+    to {
+        margin-left: 800px;
+    }
+}
+
+@keyframes leftToMid {
+    from {
+        margin-left: -800px;
+    }
+    to {
+        margin-left: 100px;
+    }
+}
+
+@keyframes midToLeft {
+    from {
+        margin-left: 100px;
+    }
+    to {
+        margin-left: -800px;
+    }
+}
+
+/* .EOD-table{ */
+    /* margin-left: 100px; */
+/* } */
+
+/* <!-- HTML !-->
+<button class="button-33" role="button">Button 33</button> */
+
+/* CSS */
+.button-33 {
+  background-color: #c2fbd7;
+  border-radius: 100px;
+  box-shadow: rgba(44, 187, 99, .2) 0 -25px 18px -14px inset,rgba(44, 187, 99, .15) 0 1px 2px,rgba(44, 187, 99, .15) 0 2px 4px,rgba(44, 187, 99, .15) 0 4px 8px,rgba(44, 187, 99, .15) 0 8px 16px,rgba(44, 187, 99, .15) 0 16px 32px;
+  color: green;
+  cursor: pointer;
+  display: inline-block;
+  font-family: CerebriSans-Regular,-apple-system,system-ui,Roboto,sans-serif;
+  padding: 7px 20px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 250ms;
+  border: 0;
+  font-size: 16px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-33:hover {
+  box-shadow: rgba(44,187,99,.35) 0 -25px 18px -14px inset,rgba(44,187,99,.25) 0 1px 2px,rgba(44,187,99,.25) 0 2px 4px,rgba(44,187,99,.25) 0 4px 8px,rgba(44,187,99,.25) 0 8px 16px,rgba(44,187,99,.25) 0 16px 32px;
+  transform: scale(1.05) rotate(-1deg);
+}

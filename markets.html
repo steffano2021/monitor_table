@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./css/main.css">
+    <link rel="stylesheet" type="text/css" href="./css/markets.css">
+    <title>monitor-markets</title>
+    <script src="https://kit.fontawesome.com/903eb888a8.js" crossorigin="anonymous"></script>
+    <script src="./index.js" defer></script>
+    <script src="./markets.js" ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body class="page">
+    <!-- need on every page -->
+    <div class="header">
+        <div class="header-title">PSF-UK-CONNEX</div>
+        <div class="header-icon">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </div>
+    <div class="menu">
+        <!-- <a class="menu-icon" href="./index.html">DB,PY</a> -->
+        <!-- <a class="menu-icon" href="./cloud.html">JAVA</a> -->
+        <a class="menu-icon" href="./services.html">SERVICES</a>
+        <a class="menu-icon" href="./markets.html">MARKETS</a>
+    </div>
+    <!-- end -->
+    <div class="market-box">
+        <div class="button-box">
+            <button class="test-button button-33" role="button" onclick="centerMAP()">MAP</button>
+            <button class="test-button button-33" role="button" onclick="centerSOD()">SOD</button>
+            <button class="test-button button-33" role="button" onclick="centerEOD()">EOD</button>
+        </div>
+        <div class="hidden-box">
+            <div class="maps-container">
+                <img src="./maps/eu-as-aus.png" class="map-continents" usemap="#infographic" />
+                <map name="infographic" class="map-map">
+                    <area shape="circle" coords="337, 300, 44" href="coffee.htm">
+                </map>
+                <img src="./maps/colors/jp-green.png" class="jp-status" />
+                <img src="./maps/colors/au-green.png" class="au-status" />
+                <img src="./maps/colors/nz-green.png" class="nz-status" />
+                <img src="./maps/colors/uk-green.png" class="uk-status" />
+                <img src="./maps/colors/fr-green.png" class="fr-status" />
+                <img src="./maps/colors/it-green.png" class="it-status" />
+                <img src="./maps/colors/de-green.png" class="de-status" />
+                <img src="./maps/colors/nl-red.png" class="nl-status" />
+                <img src="./maps/colors/at-green.png" class="at-status" />
+                <img src="./maps/colors/in-green.png" class="in-status" />
+                <img src="./maps/colors/tw-green.png" class="tw-status" />
+                <img src="./maps/colors/th-green.png" class="th-status" />
+                <img src="./maps/colors/hk-green.png" class="hk-status" />
+                <img src="./maps/colors/sg-green.png" class="sg-status" />
+                <span class="tooltiptext">Tooltip text</span>
+            </div>
+                <table class="SOD-table">
+                    <thead>
+                        <tr>
+                            <th>SOD</th>
+                            <th>Consumer</th>
+                            <th>Commercial</th>
+                            <th>Fraud</th>
+                            <th>GOO</th>
+                            <th>GNA</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>UK</td>
+                            <td>O</td>
+                            <td>O</td>
+                            <td>-</td>
+                            <td>C</td>
+                            <td>N/A</td>
+                        </tr>
+                        <tr>
+                            <td>FR</td>
+                            <td>O</td>
+                            <td>O</td>
+                            <td>-</td>
+                            <td>C</td>
+                            <td>N/A</td>
+                        </tr>
+                        <tr>
+                            <td>IT</td>
+                            <td>O</td>
+                            <td>O</td>
+                            <td>-</td>
+                            <td>C</td>
+                            <td>N/A</td>
+                        </tr>
+                        <tr>
+                            <td>NL</td>
+                            <td>O</td>
+                            <td>O</td>
+                            <td>-</td>
+                            <td>C</td>
+                            <td>N/A</td>
+                        </tr>
+                        <tr>
+                            <td>AT</td>
+                            <td>O</td>
+                            <td>O</td>
+                            <td>-</td>
+                            <td>C</td>
+                            <td>N/A</td>
+                        </tr>
+                        <tr>
+                            <td>DE</td>
+                            <td>O</td>
+                            <td>O</td>
+                            <td>-</td>
+                            <td>C</td>
+                            <td>N/A</td>
+                        </tr>
+                        <tr>
+                            <td>JP</td>
+                            <td>O</td>
+                            <td>O</td>
+                            <td>-</td>
+                            <td>C</td>
+                            <td>N/A</td>
+                        </tr>
+                        <tr>
+                            <td>TW</td>
+                            <td>O</td>
+                            <td>O</td>
+                            <td>-</td>
+                            <td>C</td>
+                            <td>N/A</td>
+                        </tr>
+                        <tr>
+                            <td>TH</td>
+                            <td>O</td>
+                            <td>O</td>
+                            <td>-</td>
+                            <td>C</td>
+                            <td>N/A</td>
+                        </tr>
+                        <tr>
+                            <td>AZ</td>
+                            <td>O</td>
+                            <td>O</td>
+                            <td>-</td>
+                            <td>C</td>
+                            <td>N/A</td>
+                        </tr>
+                        <tr>
+                            <td>NZ</td>
+                            <td>O</td>
+                            <td>O</td>
+                            <td>-</td>
+                            <td>C</td>
+                            <td>N/A</td>
+                        </tr>
+                        <tr>
+                            <td>SG</td>
+                            <td>O</td>
+                            <td>O</td>
+                            <td>-</td>
+                            <td>C</td>
+                            <td>N/A</td>
+                        </tr>
+                        <tr>
+                            <td>HK</td>
+                            <td>O</td>
+                            <td>O</td>
+                            <td>-</td>
+                            <td>C</td>
+                            <td>N/A</td>
+                        </tr>
+                        <tr>
+                            <td>IN</td>
+                            <td>O</td>
+                            <td>O</td>
+                            <td>-</td>
+                            <td>C</td>
+                            <td>N/A</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <table class="EOD-table">
+                    <thead>
+                        <tr>
+                            <th>EOD</th>
+                            <th>Consumer</th>
+                            <th>Commercial</th>
+                            <th>Fraud</th>
+                            <th>GOO</th>
+                            <th>GNA</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>UK</td>
+                            <td>O</td>
+                            <td>O</td>
+                            <td>-</td>
+                            <td>C</td>
+                            <td>N/A</td>
+                        </tr>
+                        <tr>
+                            <td>FR</td>
+                            <td>O</td>
+                            <td>O</td>
+                            <td>-</td>
+                            <td>C</td>
+                            <td>N/A</td>
+                        </tr>
+                        <tr>
+                            <td>IT</td>
+                            <td>O</td>
+                            <td>O</td>
+                            <td>-</td>
+                            <td>C</td>
+                            <td>N/A</td>
+                        </tr>
+                        <tr>
+                            <td>NL</td>
+                            <td>O</td>
+                            <td>O</td>
+                            <td>-</td>
+                            <td>C</td>
+                            <td>N/A</td>
+                        </tr>
+                        <tr>
+                            <td>AT</td>
+                            <td>O</td>
+                            <td>O</td>
+                            <td>-</td>
+                            <td>C</td>
+                            <td>N/A</td>
+                        </tr>
+                        <tr>
+                            <td>DE</td>
+                            <td>O</td>
+                            <td>O</td>
+                            <td>-</td>
+                            <td>C</td>
+                            <td>N/A</td>
+                        </tr>
+                        <tr>
+                            <td>JP</td>
+                            <td>O</td>
+                            <td>O</td>
+                            <td>-</td>
+                            <td>C</td>
+                            <td>N/A</td>
+                        </tr>
+                        <tr>
+                            <td>TW</td>
+                            <td>O</td>
+                            <td>O</td>
+                            <td>-</td>
+                            <td>C</td>
+                            <td>N/A</td>
+                        </tr>
+                        <tr>
+                            <td>TH</td>
+                            <td>O</td>
+                            <td>O</td>
+                            <td>-</td>
+                            <td>C</td>
+                            <td>N/A</td>
+                        </tr>
+                        <tr>
+                            <td>AZ</td>
+                            <td>O</td>
+                            <td>O</td>
+                            <td>-</td>
+                            <td>C</td>
+                            <td>N/A</td>
+                        </tr>
+                        <tr>
+                            <td>NZ</td>
+                            <td>O</td>
+                            <td>O</td>
+                            <td>-</td>
+                            <td>C</td>
+                            <td>N/A</td>
+                        </tr>
+                        <tr>
+                            <td>SG</td>
+                            <td>O</td>
+                            <td>O</td>
+                            <td>-</td>
+                            <td>C</td>
+                            <td>N/A</td>
+                        </tr>
+                        <tr>
+                            <td>HK</td>
+                            <td>O</td>
+                            <td>O</td>
+                            <td>-</td>
+                            <td>C</td>
+                            <td>N/A</td>
+                        </tr>
+                        <tr>
+                            <td>IN</td>
+                            <td>O</td>
+                            <td>O</td>
+                            <td>-</td>
+                            <td>C</td>
+                            <td>N/A</td>
+                        </tr>
+                    </tbody>
+                </table>
+        </div>
+    </div>
+</body>
+</html>

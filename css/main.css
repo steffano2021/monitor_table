@@ -1,0 +1,315 @@
+/* main styling starts here  */
+
+/* css reset  */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+body {
+    /* overflow-x: hidden; */
+}
+
+.page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    background-color: #f8ffe5;                    /* main page color  */
+    background-color: rgba(255, 254, 254, 0.286);
+    font-family: 'Roboto', sans-serif;
+    font-size: medium;
+    font-weight: 500;
+    position: relative;
+}
+
+.header {
+    width: 100%;
+    height: 5vh;
+    background-color: #a4c3b2;
+    display: flex;
+    position: absolute;
+    z-index: 2;
+}
+
+.header-title {
+    width: 10%;
+    background-color: #6b9080;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: CerebriSans-Regular,-apple-system,system-ui,Roboto,sans-serif;
+}
+
+.header-icon {
+    width: 3%;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+}
+
+.header-icon:hover {
+    color: #f2f4f3;
+}
+
+.menu {
+    background-color: #1f363d;
+    position: absolute;
+    left: -200px;
+    width: 10%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 11vh;
+    z-index: 10;
+    /* animation controls
+       name handled by js file
+    */
+    animation-name: '';
+    animation-duration: 1s;
+}
+
+@keyframes slideIn {
+    from {
+        left: -200px;
+    }
+    to {
+        left: 0px;
+    }
+}
+
+@keyframes slideOut {
+    from {
+        left: 0px;
+    }
+    to {
+        left: -200px;
+    }
+}
+
+.menu-icon {
+    margin-bottom: 20px;
+    color: #f2f4f3;
+}
+
+.tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: #d8e2dc;
+    color: black;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    /* Position the tooltip */
+
+    position: absolute;
+    z-index: 10;
+}
+
+i:hover ~ .tooltiptext {
+    visibility: visible;
+}
+
+/* main css ends here */
+
+
+
+
+
+
+
+
+
+.dbs {
+    display: inline-flex;
+    align-items: center;
+    width: 800px;
+    height: 200px;
+    margin-top: 8%;
+    margin-bottom: 6%;
+}
+
+.db-cont{
+    width: 50%;
+    height: 100%;
+    position: relative;
+}
+
+.db-color {
+    /* background-color: #E07A5F; */
+    /* background-color: #F2CC8F; */
+    background-color: #81B29A;
+    margin: 0 5%;
+    width: 50%;
+    height: 78%;
+    border-radius: 27%;
+}
+
+.db-name {
+    position: absolute;
+    left: 10%;
+    font-size: 80%;
+    bottom: 10px;
+}
+
+.db {
+    width: 60%;
+    height: 80%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.servers {
+    display: flex;
+    justify-content: space-around;
+    width: 1000px;
+    height: 200px;
+    position: relative;
+}
+
+.server-cont{
+    width: 25%;
+    height: 100%;
+    position: relative;
+}
+
+.server-color{
+    background-color: #E07A5F;
+    /* background-color: #81B29A; */
+    width: 60%;
+    height: 78%;
+    border-radius: 10%;
+}
+
+.server {
+    width: 60%;
+    height: 80%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.server-name {
+    position: absolute;
+    left: 5px;
+    font-size: 80%;
+    bottom: 10px;
+}
+
+.clouds {
+    position: relative;
+    width: 1000px;
+    height: 1000px;
+}
+
+.clouds-center {
+    display: block;
+    position: absolute;
+    top: 40%;
+    left: 46%;
+    width: 30%;
+    height: 40%;
+    margin: -2em;
+    background-color: #cce3de;
+    border-radius: 3%;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.cloud1 { transform: rotate(15deg) translate(400px) rotate(-15deg); }
+.cloud2 { transform: rotate(45deg) translate(400px) rotate(-45deg); }
+.cloud3 { transform: rotate(75deg) translate(400px) rotate(-75deg); }
+.cloud4 { transform: rotate(105deg) translate(400px) rotate(-105deg); }
+.cloud5 { transform: rotate(135deg) translate(400px) rotate(-135deg); }
+.cloud6 { transform: rotate(165deg) translate(400px) rotate(-165deg); }
+.cloud7 { transform: rotate(195deg) translate(400px) rotate(-195deg); }
+.cloud8 { transform: rotate(225deg) translate(400px) rotate(-225deg); }
+.cloud9 { transform: rotate(255deg) translate(400px) rotate(-255deg); }
+.cloud10 { transform: rotate(285deg) translate(400px) rotate(-285deg); }
+.cloud11 { transform: rotate(315deg) translate(400px) rotate(-315deg); }
+.cloud12 { transform: rotate(345deg) translate(400px) rotate(-345deg); }
+
+.cloud-cont {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 15%;
+    height: 15%;
+}
+
+.cloud-color-1 {
+    z-index: 1;
+    position: absolute;
+    left: 28%;
+    top: 25%;
+    width: 45%;
+    height: 65%;
+    border-radius: 40%;
+}
+.cloud-color-2 {
+    z-index: 1;
+    position: absolute;
+    left: 3%;
+    top: 35%;
+    width: 50%;
+    height: 30%;
+    border-radius: 35%;
+}
+.cloud-color-3 {
+    z-index: 1;
+    position: absolute;
+    left: 17%;
+    top: 12%;
+    width: 38%;
+    height: 28%;
+    border-radius: 40%;
+}
+.cloud-color-4 {
+    z-index: 1;
+    position: absolute;
+    left: 48%;
+    top: 20%;
+    width: 38%;
+    height: 28%;
+    border-radius: 40%;
+}
+.cloud-color-5 {
+    z-index: 1;
+    position: absolute;
+    left: 68%;
+    top: 45%;
+    width: 29%;
+    height: 18%;
+    border-radius: 40%;
+}
+
+.cloud-name {
+    position: absolute;
+    top: -10px;
+    left: 20px;
+    font-size: 80%;
+}
+
+.cloud-status {
+    /* background-color: #E07A5F; */
+    background-color: #81B29A;
+}
+
+.cloud {
+    z-index: 2;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
